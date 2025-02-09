@@ -25,6 +25,7 @@ public class RegisterUserStepDef {
 
     @When("User clicks on Register link")
     public void user_clicks_on_register_link() {
+      //  tested by meera
         register= new RegisterPage(DriverFactory.getTdriver());
         register.click_Register();
         ExtentCucumberAdapter.addTestStepLog("Registered user is clicked");
@@ -32,7 +33,7 @@ public class RegisterUserStepDef {
 
     @When("User enters FirstName, LastName,Address,City,State,ZipCode,Phone,SSN")
     public void user_enters_first_name_last_name_address_city_state_zip_code_phone_ssn() {
-
+              //  tested by meera
          hm = excel.getexceldata(sheetname,"TC003-Register",PropertiesUtils.getproperty("testdataloc"));
          register.EnterRegisterUser(hm);
          ExtentCucumberAdapter.addTestStepLog("User enters first name and last name and address");
