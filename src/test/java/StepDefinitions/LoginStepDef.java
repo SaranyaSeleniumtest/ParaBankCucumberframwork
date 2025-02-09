@@ -12,6 +12,7 @@ public class LoginStepDef  {
 
     @Given("User navigates to login page")
     public void user_navigates_to_login_page() {
+        //tester-saranya
        lp= new LoginPage(DriverFactory.getTdriver());
         System.out.println("User navigates to login page");
     }
@@ -19,6 +20,7 @@ public class LoginStepDef  {
 
     @When("User enters username and password")
     public void user_enters_username_and_password() {
+        //tester-saranya
     lp.enterUsername("tomvasu");
     lp.enterPassword("testing");
     }
@@ -26,6 +28,7 @@ public class LoginStepDef  {
 
     @When("clicks on login button")
     public void clicks_on_login_button() {
+        //tester-saranya
     lp.clickLogin();
     }
 
