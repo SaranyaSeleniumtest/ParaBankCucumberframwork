@@ -26,6 +26,7 @@ public class HomeStepDef {
 
     @Then("User able to see all Navigation links")
     public void User_able_to_see_all_Navigation_links(DataTable dataTable) {
+        //Added home step
         nav = new HomePage(DriverFactory.getTdriver());
         Assert.assertEquals(nav.validationnavigation_options(),dataTable.asList());
 
