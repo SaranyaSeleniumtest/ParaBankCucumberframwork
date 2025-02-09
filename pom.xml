@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<!--  <suiteXmlFile> suitefiles\Regression.xml</suiteXmlFile>-->
+  <suiteXmlFile> suitefiles\Regression.xml</suiteXmlFile>
   </properties>
 
 
@@ -28,7 +28,7 @@
                       <configuration>
                         <suiteXmlFiles>
                           <suiteXmlFile>
-<!--                            ${suiteXmlFile}-->
+                            ${suiteXmlFile}
 <!--                            ${surefire. suiteXmlFiles}-->
                             testng.xml
                           </suiteXmlFile>
